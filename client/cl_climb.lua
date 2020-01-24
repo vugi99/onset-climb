@@ -23,7 +23,7 @@ AddEvent("OnGameTick",function(ds)
             climbposx=impactX1+fx*10
             climbposy=impactY1+fy*10
             local hittype, hitid, impactX2, impactY2, impactZ2 = LineTrace(x+fx*mult3,y+fy*mult3,z+70,x+fx*mult3,y+fy*mult3,z+150)
-            z=z+50
+            z=z+35
             if (hittype~= 2 and impactX2==0 and impactY2==0 and impactZ2==0) then
               local hittype, hitid, impactX3, impactY3, impactZ3 = LineTrace(x+fx*mult1,y+fy*mult1,z+fz*mult1,x+fx*mult2,y+fy*mult2,z+fz*mult2)
               if (hittype~= 2 and impactX3==0 and impactY3==0 and impactZ3==0) then
